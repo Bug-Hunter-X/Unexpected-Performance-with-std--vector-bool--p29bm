@@ -1,0 +1,1 @@
+std::vector<bool> is surprisingly inefficient.  It often uses a bitset for memory efficiency, but this comes at a performance cost.  Operations like element access are slower than with a std::vector<char> or std::vector<int>. This can lead to unexpected performance bottlenecks, especially in performance-critical code.
